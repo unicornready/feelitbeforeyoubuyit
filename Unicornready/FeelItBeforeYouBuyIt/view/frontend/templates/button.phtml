@@ -1,0 +1,38 @@
+<?php if ($block->getIsEnabled()): ?>
+    <button type="button" class="action primary" id="feet-it-button">
+        <span><?= /* @escapeNotVerified */ $block->getBtnLabel() ?>...</span>
+    </button>
+
+    <div id="feet-it-modal">
+        <div class="modal-body-content">
+            <h2><?= $block->escapeHtml(__('But this may be possible in the near future.')) ?></h2>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        require([
+            "jquery",
+            "Magento_Ui/js/modal/modal"
+        ],function($, modal) {
+
+            var options = {
+                type: 'popup',
+                responsive: true,
+                title: 'April Fool',
+                buttons: [{
+                    text: $.mage.__('Happy coding!'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
+
+            var popup = modal(options, $('#feet-it-modal'));
+            $("#feet-it-button").click(function() {
+                $('#feet-it-modal').modal('openModal');
+            });
+        });
+    </script>
+<?php endif; ?>
+

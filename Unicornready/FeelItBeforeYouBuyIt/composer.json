@@ -1,0 +1,22 @@
+{
+    "name": "unicornready/module-feelitbeforeyoubuyit",
+    "description": "FeelItBeforeYouBuyIt",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Unicornready",
+            "email": "info@unicornready.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Unicornready\\FeelItBeforeYouBuyIt\\": ""
+        }
+    }
+}

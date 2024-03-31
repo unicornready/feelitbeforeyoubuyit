@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="unicornready" translate="label" sortOrder="999">
+			<label>Unicornready</label>
+		</tab>
+		<section id="feelitbeforeyoubuyit" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Feel it before you buy it</label>
+			<tab>unicornready</tab>
+			<resource>Unicornready_FeelItBeforeYouBuyIt::config_unicornready_feelitbeforeyoubuyit</resource>
+			<group id="settings" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Settings</label>
+				<field id="enable" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+                <field id="btn_label" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Button Label</label>
+                    <comment>Button to show in feel it before you buy it button</comment>
+                </field>
+			</group>
+		</section>
+	</system>
+</config>
