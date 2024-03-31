@@ -1,4 +1,4 @@
-# Magento 2 Module Unicornready Feel It Before You Buy It
+# Magento 2 Module Feel It Before You Buy It
 
     ``unicornready/module-feelitbeforeyoubuyit``
 
